@@ -18,7 +18,7 @@ A simple **Flask-based Weather App** that allows users to search for a city's we
 ```sh
 git clone https://github.com/yourusername/weather-app.git
 cd weather-app
-
+```
 
 ### 2️⃣ **Create a Virtual Environment (Optional)**
 ```sh
@@ -26,14 +26,20 @@ python -m venv venv
 source venv/bin/activate  
 venv\Scripts\activate
 
-4️⃣ Get a Free API Key from WeatherAPI
+```
+
+###3️⃣ Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+###4️⃣ Get a Free API Key from WeatherAPI
 Go to https://www.weatherapi.com/
 Sign up and get your free API key
 Replace "your_weatherapi_key" in app.py with your actual key
-5️⃣ Run the Flask App
-sh
-Copy
-Edit
+
+###5️⃣ Run the Flask App
+```sh
 python app.py
-6️⃣ Open in Browser
+```
+###6️⃣ Open in Browser
 Go to http://127.0.0.1:5000/ and search for any city's weather! 🌍🌤️

@@ -1,0 +1,70 @@
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: #337ab7;
+    padding: 15px;
+    color: white;
+    text-align: center;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Search Box */
+.search-box {
+    margin: 40px auto;
+    max-width: 500px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group input {
+    height: 45px;
+    font-size: 16px;
+}
+
+.btn-primary {
+    height: 45px;
+    width: 50px;
+}
+
+/* Weather Info */
+.weather-info {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-info h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #337ab7;
+}
+
+.weather-info p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-box, .weather-info {
+        max-width: 90%;
+    }
+}

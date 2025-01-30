@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Your Weather App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="text-center">Weather App</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="search-box">
+            <form method="post">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="city" placeholder="Enter city name">
+                    <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        {% if data.cityname %}
+<div class="weather-info">
+    <h2>Weather Details</h2>
+    <p><strong>City Name:</strong> {{ data.cityname }}</p>
+    <p><strong>Country:</strong> {{ data.country_code }}</p>
+    <p><strong>Coordinate:</strong> {{ data.coordinate }}</p>
+    <p><strong>Temperature:</strong> {{ data.temp }} °C</p>
+    <p><strong>Pressure:</strong> {{ data.pressure }} hPa</p>
+    <p><strong>Humidity:</strong> {{ data.humidity }}%</p>
+    <p><strong>Condition:</strong> {{ data.condition }}</p>
+    <img src="{{ data.icon }}" alt="Weather Icon">
+</div>
+{% endif %}
+
+    </div>
+
+</body>
+
+</html>

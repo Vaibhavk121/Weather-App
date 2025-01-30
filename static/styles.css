@@ -1,4 +1,4 @@
-/* General Page Styling */
+
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to right, #74ebd5, #acb6e5);
@@ -7,7 +7,6 @@ body {
     padding: 0;
 }
 
-/* Navigation Bar */
 .navbar {
     background: #337ab7;
     padding: 15px;
@@ -20,7 +19,6 @@ body {
     font-weight: bold;
 }
 
-/* Search Box */
 .search-box {
     margin: 40px auto;
     max-width: 500px;
@@ -62,7 +60,7 @@ body {
     margin: 5px 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .search-box, .weather-info {
         max-width: 90%;

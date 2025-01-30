@@ -8,10 +8,10 @@ BASE_URL = "http://api.weatherapi.com/v1/current.json"
 
 @app.route("/", methods=["GET", "POST"])
 def home():
-    weather_data = {}  # Empty dictionary to store weather details
+    weather_data = {}
 
     if request.method == "POST":
-        city = request.form.get("city")  # Get city name from form
+        city = request.form.get("city")
 
         if city:
             url = f"{BASE_URL}?key={API_KEY}&q={city}&aqi=no"

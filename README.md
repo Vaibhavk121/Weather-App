@@ -11,7 +11,14 @@ A simple **Flask-based Weather App** that allows users to search for a city's we
 ---
 
 ## 📂 Project Structure  
-/weather-app │── /static │ │── styles.css # Custom CSS │── /templates │ │── index.html # Frontend UI │── app.py # Flask Backend │── requirements.txt # Required dependencies │── README.md # Project Documentation
+/weather-app 
+  │── /static │ 
+    │── styles.css  
+  │── /templates │ 
+    │── index.html  
+  │── app.py 
+  │── requirements.txt
+  │── README.md +
 
 ## 📸 Screenshot  
 Here is a preview of the Weather App:  

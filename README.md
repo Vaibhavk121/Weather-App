@@ -32,18 +32,18 @@ venv\Scripts\activate
 
 ```
 
-###3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 ```sh
 pip install -r requirements.txt
 ```
-###4️⃣ Get a Free API Key from WeatherAPI
+### 4️⃣ Get a Free API Key from WeatherAPI
 Go to https://www.weatherapi.com/
 Sign up and get your free API key
 Replace "your_weatherapi_key" in app.py with your actual key
 
-###5️⃣ Run the Flask App
+### 5️⃣ Run the Flask App
 ```sh
 python app.py
 ```
-###6️⃣ Open in Browser
+### 6️⃣ Open in Browser
 Go to http://127.0.0.1:5000/ and search for any city's weather! 🌍🌤️
